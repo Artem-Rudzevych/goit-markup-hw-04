@@ -144,7 +144,11 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--secondary-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 
 /* Кнопки Button */
@@ -280,6 +284,21 @@ header {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.icon-team {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.icon-buttom {
+  border-radius: 50%;
+}
+.icon-hover:hover,
+:focus {
+  background-color: var(--hover-text-color);
+  color: var(--primary-background-color);
+}
+/* Футер */
 .footer-style {
   padding-top: 60px;
   padding-bottom: 60px;
