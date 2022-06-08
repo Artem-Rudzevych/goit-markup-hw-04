@@ -309,35 +309,39 @@ header {
 }
 .icon-team {
   display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
   padding-bottom: 30px;
-  color: #757575;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.social-item:first-child {
+  margin-left: 0;
 }
 .button-icon {
-  display: block;
-  outline: none;
-  text-decoration: none;
-  padding: 0;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--icons-border-color);
   background-color: var(--primary-background-color);
   cursor: pointer;
 }
 /* .social-link a {
 } */
 .icon {
-  width: 44px;
-  height: 44px;
+  fill: var(--icons-border-color);
 }
 .button-icon:hover,
 .button-icon:focus {
-  fill: var(--primary-background-color);
   background-color: var(--hover-text-color);
+}
+.button-icon:hover .icon,
+.button-icon:focus .icon {
+  fill: var(--primary-background-color);
 }
 /* Стилизация Клиентов */
 .client-list {
@@ -345,7 +349,9 @@ header {
   justify-content: space-between;
 }
 .link-box {
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icons-border-color);
   border-radius: 4px;
   fill: var(--icons-border-color);
@@ -405,15 +411,18 @@ header {
   height: 80px;
 }
 .button-social {
-  display: block;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: none;
-  fill: var(--primary-background-color);
+
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+}
+.footer-icon {
+  fill: var(--primary-background-color);
 }
 .button-social:hover,
 .button-social:focus {
