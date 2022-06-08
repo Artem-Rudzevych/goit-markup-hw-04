@@ -101,6 +101,7 @@ header {
 .header-contact .flex-cont:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-contact .link {
   display: block;
   font-weight: 500;
@@ -110,9 +111,8 @@ header {
   text-decoration: none;
   padding: 32px 0;
 }
+
 .footer-contact a {
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contact-footer-text);
@@ -129,6 +129,22 @@ header {
 .footer-contact a:focus {
   color: var(--hover-text-color);
 }
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+/* .icon-style::before {
+  display: inline-flex;
+  align-items: center;
+  content: "";
+  width: 10px;
+  height: 16px;
+  fill: var(--text-color);
+  margin-right: 10px;
+  background-color: #188ce8;
+  background-image: url("../images/box1.jpg");
+  background-size: contain;
+} */
 /* Стилизация hero-title */
 .hero-title {
   margin-top: 0;
@@ -310,7 +326,7 @@ header {
   height: 20px;
 }
 .button-icon:hover,
-:focus {
+.button-icon:focus {
   fill: var(--primary-background-color);
   background-color: var(--hover-text-color);
 }
@@ -330,7 +346,7 @@ header {
   cursor: pointer;
 }
 .link-box:hover,
-:focus {
+.link-box:focus {
   border: 1px solid var(--hover-text-color);
   fill: var(--hover-text-color);
 }
@@ -346,6 +362,7 @@ header {
 }
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 .footer-style {
   margin-right: 70px;
@@ -372,10 +389,25 @@ header {
 }
 .connect-list {
   display: flex;
+  justify-content: space-between;
 }
 .connect-box {
   width: 206px;
   height: 80px;
+}
+.button-social {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  fill: var(--primary-background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.button-social:hover,
+.button-social:focus {
+  background-color: var(--hover-text-color);
 }
 
 /* Стилизация страницы Портфолио */
