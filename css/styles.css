@@ -231,6 +231,15 @@ header {
   margin-right: 30px;
 }
 
+.Advantages-icon {
+  display: inline-block;
+  width: 270px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  background-color: var(--button-bg-color);
+}
+
 .advantages-title {
   margin: 0;
 }
