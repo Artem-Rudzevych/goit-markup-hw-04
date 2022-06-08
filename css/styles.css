@@ -101,7 +101,9 @@ header {
 .header-contact .flex-cont:not(:last-child) {
   margin-right: 50px;
 }
-
+.flex-cont {
+  display: flex;
+}
 .header-contact .link {
   display: block;
   font-weight: 500;
@@ -132,19 +134,10 @@ header {
 .contact-icon {
   display: flex;
   align-items: center;
+  width: 16px;
+  height: 12px;
 }
-/* .icon-style::before {
-  display: inline-flex;
-  align-items: center;
-  content: "";
-  width: 10px;
-  height: 16px;
-  fill: var(--text-color);
-  margin-right: 10px;
-  background-color: #188ce8;
-  background-image: url("../images/box1.jpg");
-  background-size: contain;
-} */
+
 /* Стилизация hero-title */
 .hero-title {
   margin-top: 0;
@@ -164,6 +157,7 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -234,9 +228,10 @@ header {
 .Advantages-icon {
   display: inline-block;
   width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  height: 120px;
+
   background-color: var(--button-bg-color);
 }
 
@@ -321,18 +316,23 @@ header {
   color: #757575;
 }
 .button-icon {
+  display: block;
+  outline: none;
+  text-decoration: none;
   padding: 0;
+  border: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: none;
   fill: var(--icons-border-color);
   background-color: var(--primary-background-color);
   cursor: pointer;
 }
+/* .social-link a {
+} */
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
 }
 .button-icon:hover,
 .button-icon:focus {
@@ -405,6 +405,7 @@ header {
   height: 80px;
 }
 .button-social {
+  display: block;
   padding: 0;
   width: 44px;
   height: 44px;
