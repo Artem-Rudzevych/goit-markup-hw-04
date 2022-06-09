@@ -34,6 +34,13 @@ body {
 img {
   display: block;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about.section {
+  padding-top: 0px;
+}
 header {
   border-bottom: 1px solid var(--border-head-color);
 }
@@ -219,10 +226,7 @@ header {
 }
 
 /* Стилизация Advantages */
-/* .advantages {
-  padding-top: 94px;
-  padding-bottom: 0;
-} */
+
 .advantages-flex {
   display: flex;
 }
@@ -258,13 +262,7 @@ header {
   line-height: 1.7;
 }
 /* Секция About */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.about.section {
-  padding-top: 0px;
-}
+
 .about-list {
   display: flex;
 }
