@@ -258,8 +258,7 @@ header {
   line-height: 1.7;
 }
 /* Секция About */
-.container.about,
-.section-client {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -272,8 +271,6 @@ header {
 /* Стилизация Team */
 .team {
   background-color: var(--button-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -489,14 +486,9 @@ header {
 .list-style .filter-flex:not(:last-child) {
   margin-right: 8px;
 }
-.container.fil {
-  padding-top: 94px;
+.fil {
   padding-bottom: 50px;
 }
 .port-img {
   margin-top: 0;
-}
-.container.port {
-  padding-top: 0;
-  padding-bottom: 94px;
 }
