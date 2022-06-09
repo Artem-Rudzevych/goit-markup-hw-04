@@ -103,9 +103,12 @@ header {
 }
 .flex-cont {
   display: flex;
+
+  align-items: center;
 }
 .header-contact .link {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -132,10 +135,8 @@ header {
   color: var(--hover-text-color);
 }
 .contact-icon {
-  display: flex;
-  align-items: center;
-  width: 16px;
-  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Стилизация hero-title */
@@ -328,21 +329,19 @@ header {
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-background-color);
+  color: var(--icons-border-color);
   cursor: pointer;
 }
-/* .social-link a {
-} */
+
 .icon {
-  fill: var(--icons-border-color);
+  fill: currentColor;
 }
 .button-icon:hover,
 .button-icon:focus {
   background-color: var(--hover-text-color);
+  color: var(--primary-background-color);
 }
-.button-icon:hover .icon,
-.button-icon:focus .icon {
-  fill: var(--primary-background-color);
-}
+
 /* Стилизация Клиентов */
 .client-list {
   display: flex;
