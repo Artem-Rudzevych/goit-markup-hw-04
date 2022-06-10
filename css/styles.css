@@ -22,6 +22,15 @@ html {
   --icons-border-color: #afb1b8;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-background-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,16 +42,6 @@ html {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--primary-background-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
 }
 img {
   display: block;
