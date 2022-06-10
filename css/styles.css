@@ -22,6 +22,19 @@ html {
   --icons-border-color: #afb1b8;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-background-color);
@@ -278,10 +291,12 @@ header {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+}
+.team-box:not(:last-child) {
+  margin-right: 30px;
 }
 .team-box {
-  width: 270px;
+  width: calc((100% - 3 * 30px) / 4);
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -289,7 +304,6 @@ header {
 }
 
 .team-name {
-  padding-top: 30px;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -305,7 +319,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-align: center;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .about-title,
 .team-title {
@@ -316,10 +330,13 @@ header {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .icon-team {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
 .social-item {
   width: 44px;
@@ -353,7 +370,12 @@ header {
 /* Стилизация Клиентов */
 .client-list {
   display: flex;
-  justify-content: space-between;
+}
+.link-card:not(:last-child) {
+  margin-right: 30px;
+}
+.link-card {
+  width: calc((100% - 5 * 30px) / 6);
 }
 .link-box {
   display: flex;
@@ -362,7 +384,7 @@ header {
   border: 1px solid var(--icons-border-color);
   border-radius: 4px;
   fill: var(--icons-border-color);
-  width: 170px;
+
   height: 92px;
   background-color: var(--primary-background-color);
   cursor: pointer;
@@ -438,8 +460,6 @@ header {
 
 /* Стилизация страницы Портфолио */
 .project-title {
-  padding-top: 20px;
-  padding-left: 24px;
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -450,48 +470,49 @@ header {
   color: var(--title-color);
 }
 .description {
-  padding-left: 24px;
-  padding-bottom: 20px;
   margin: 0;
 
   font-size: 16px;
   line-height: 1.9;
   color: var(--text-color);
 }
-.card-box {
-  width: 370px;
-  box-sizing: border-box;
-}
-.card-box:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .card-border {
+  padding: 20px 24px;
   border: 1px solid var(--border-color);
-  border-top: transparent;
+  border-top: 0;
 }
-
-.card-box:nth-child(-n + 6) {
+/* (100% - кол марджинов*значение марджинов) /кол элементов в строке */
+.card-box {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
   margin-bottom: 30px;
 }
+.card-box:nth-child(3n) {
+  margin-right: 0;
+}
+.card-box:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .filter a {
   text-decoration: none;
 }
+.link-hover:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .button-flex {
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
 }
 .card-flex {
-  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 .list-style .filter-flex:not(:last-child) {
   margin-right: 8px;
-}
-.fil {
-  padding-bottom: 50px;
 }
 .port-img {
   margin-top: 0;
